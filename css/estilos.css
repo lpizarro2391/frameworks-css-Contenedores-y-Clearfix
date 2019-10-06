@@ -2,7 +2,11 @@
     box-sizing: border-box;
 }
 
-
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
 [class*="col-"] {
     float: left;
